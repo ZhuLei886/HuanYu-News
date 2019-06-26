@@ -1,0 +1,60 @@
+server:
+  port: 9999
+
+spring:
+#    mvc:
+#        view:
+#          prefix: /
+#          suffix: .html
+    datasource:
+#        name: test
+        driver-class-name: com.mysql.jdbc.Driver
+#        url: jdbc:mysql://132.232.39.186:3306/news?&useUnicode=true&characterEncoding=UTF8
+#        username: root
+#        password: root
+        url: jdbc:mysql://127.0.0.1:3306/news?&useUnicode=true&characterEncoding=UTF8
+        username: root
+        password: admin
+        # \u4F7F\u7528druid\u6570\u636E\u6E90
+        type: com.alibaba.druid.pool.DruidDataSource
+        filters: stat
+        # \u6700\u5927\u6FC0\u6D3B\u94FE\u63A5
+        maxActive: 20
+        # \u521D\u59CB\u5316\u8FDE\u63A5\u6570
+        initialSize: 1
+        # \u6700\u5927\u7B49\u5F85\u6570
+        maxWait: 60000
+        #  \u6700\u5C0F\u7A7A\u95F2
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+    thymeleaf:
+        prefix: classpath:/static/
+
+    redis:
+      host: 132.232.39.186
+      port: 6379
+    mail:
+        host: smtp.qq.com
+        username: 352512524@qq.com
+        password: hxervlfnzxascafd
+
+
+
+mybatis:
+#  mapper-locations: classpath:com/lm/demo/mapper/*.xml
+e: com.winter.model
+
+#pagehelper\u5206\u9875\u63D2\u4EF6
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
