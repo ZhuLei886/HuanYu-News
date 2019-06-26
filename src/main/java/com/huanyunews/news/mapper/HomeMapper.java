@@ -1,3 +1,4 @@
+package com.huanyunews.news.mapper;
 
 import com.huanyunews.news.model.Article;
 import org.apache.ibatis.annotations.Mapper;
