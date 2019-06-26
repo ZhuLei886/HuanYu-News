@@ -1,4 +1,4 @@
-package com.lm.cms2.mapper;
+package com.huanyunews.news.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

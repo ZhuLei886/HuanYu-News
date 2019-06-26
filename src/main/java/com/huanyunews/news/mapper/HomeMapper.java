@@ -1,6 +1,5 @@
-package com.lm.cms2.mapper;
 
-import com.lm.cms2.model.Article;
+import com.huanyunews.news.model.Article;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
