@@ -20,22 +20,24 @@ public class UserRoleController {
     public UserRoleMapper mapper;
     @Autowired
     public RoleMapper rolemapper;
+
     @RequestMapping("/userrole")
-    public ModelAndView getAllUserRole(){
-        ModelAndView mv=new ModelAndView();
-        List userrole=mapper.getAllUserRole();
-        List role=rolemapper.getAllRoles();
-        mv.addObject("allrole",role);
-        mv.addObject("alluserrole",userrole);
+    public ModelAndView getAllUserRole() {
+        ModelAndView mv = new ModelAndView();
+        List userrole = mapper.getAllUserRole();
+        List role = rolemapper.getAllRoles();
+        mv.addObject("allrole", role);
+        mv.addObject("alluserrole", userrole);
         mv.setViewName("/app/userrole.html");
         return mv;
     }
+
     @RequestMapping("/updateuserrole")
     @ResponseBody
-    public Map updateUserRole(String t_user_id, String t_role_id){
-        mapper.updateUserRole(t_user_id,t_role_id);
-        Map map=new HashMap();
-        map.put("flag","true");
+    public Map updateUserRole(String t_user_id, String t_role_id) {
+        mapper.updateUserRole(t_user_id, t_role_id);
+        Map map = new HashMap();
+        map.put("flag", "true");
         return map;
     }
 }

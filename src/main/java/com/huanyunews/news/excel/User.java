@@ -4,9 +4,11 @@ public class User {
     public int t_user_id;
     public String t_user_account;
     public String t_user_password;
-    public User(){
+
+    public User() {
 
     }
+
     public String getT_user_email() {
         return t_user_email;
     }

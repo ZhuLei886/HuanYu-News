@@ -29,47 +29,51 @@ public class UserController {
     @Autowired
     public UserService service;
     private Integer state_user;
+
     @RequestMapping("/tologin")
-    public String toLogin(){
+    public String toLogin() {
         return "/app/login.html";
     }
+
     @RequestMapping("/register")
     @ResponseBody
     public Response register(String t_user_account, String t_user_password, String t_user_email) {
         //service内容;
-        Map<String,String> map=service.regUser(t_user_account,t_user_password,t_user_email);
+        Map<String, String> map = service.regUser(t_user_account, t_user_password, t_user_email);
         if (map.get("ok") != null) {
             return new Response(0, "系统已经向你的邮箱发送了一封邮件哦，验证后就可以登录啦~");
         } else {
             return new Response(1, "error", map);
         }
     }
+
     @RequestMapping("/tologinactivate")
     public String activate(String code) {
         service.activate(code);
         return "redirect:/tologin#activateSuccess";
     }
+
     @RequestMapping("/nodes")
     @ResponseBody
-    public Map getNodes(@RequestParam String  pageNum,String pageSize) {
+    public Map getNodes(@RequestParam String pageNum, String pageSize) {
         //访问数据库
-        Map map=new HashMap();
+        Map map = new HashMap();
         //初始化分页插件
-        int temp1=1;
-        if(pageNum!=null){
-            temp1=Integer.parseInt(pageNum);
+        int temp1 = 1;
+        if (pageNum != null) {
+            temp1 = Integer.parseInt(pageNum);
         }
-        int temp2=1;
-        if(pageSize!=null){
-            temp2=Integer.parseInt(pageSize);
+        int temp2 = 1;
+        if (pageSize != null) {
+            temp2 = Integer.parseInt(pageSize);
         }
-        PageHelper.startPage(temp1,temp2);
+        PageHelper.startPage(temp1, temp2);
 
-        List<Map<String,Object>> users=mapper.getAllUsers();
-        PageInfo page=new PageInfo(users);
+        List<Map<String, Object>> users = mapper.getAllUsers();
+        PageInfo page = new PageInfo(users);
 //       map.put("users",users);
-        map.put("page",page);
-        return  map;
+        map.put("page", page);
+        return map;
     }
 
     @RequestMapping("/login")
@@ -77,24 +81,24 @@ public class UserController {
         //在数据库中检验浏览器提交上来的数据
         ModelAndView modelAndView = new ModelAndView();
         List<Map<String, Object>> list = mapper.userLogin(t_user_account, t_user_password);
-        Map t_user_id=mapper.userLogin2(t_user_account,t_user_password);
-        if (list.size() > 0){
-            int state=Integer.parseInt(list.get(0).get("t_user_state").toString());
-            state_user=state;
+        Map t_user_id = mapper.userLogin2(t_user_account, t_user_password);
+        if (list.size() > 0) {
+            int state = Integer.parseInt(list.get(0).get("t_user_state").toString());
+            state_user = state;
         }
-        if (list.size() > 0&&state_user==1) {
+        if (list.size() > 0 && state_user == 1) {
             //登录成功
             //存储session
-            String t_user_url=list.get(0).get("t_user_url").toString();
-            String id=list.get(0).get("t_user_id").toString();
+            String t_user_url = list.get(0).get("t_user_url").toString();
+            String id = list.get(0).get("t_user_id").toString();
             session.setAttribute("user", list.get(0));
-            session.setAttribute("t_user",t_user_account);
-            session.setAttribute("t_user_url",t_user_url);
+            session.setAttribute("t_user", t_user_account);
+            session.setAttribute("t_user_url", t_user_url);
 //            session.setAttribute("t_user_url",t_user_url);
-            session.setAttribute("t_user_id",t_user_id);
-            session.setAttribute("t_id",id);
+            session.setAttribute("t_user_id", t_user_id);
+            session.setAttribute("t_id", id);
             modelAndView.setViewName("/app/index.html");
-            modelAndView.addObject("user",list.get(0));
+            modelAndView.addObject("user", list.get(0));
             //把菜单数据带首页-
             List nodes = mapper.getUserNode(list.get(0).get("t_user_id").toString());
             //把菜单数据放到域
@@ -125,23 +129,26 @@ public class UserController {
         mv.setViewName("/app/users.html");
         return mv;
     }
+
     @RequestMapping("/userhome")
     public ModelAndView UserHome(HttpSession session) {
         ModelAndView mv = new ModelAndView();
-        String t_user_account=session.getAttribute("t_user").toString();
-        List<Map<String,Object>> users=mapper.getUserHome(t_user_account);
-        mv.addObject("alluserhome",users);
+        String t_user_account = session.getAttribute("t_user").toString();
+        List<Map<String, Object>> users = mapper.getUserHome(t_user_account);
+        mv.addObject("alluserhome", users);
         mv.setViewName("/app/userhome.html");
         return mv;
     }
+
     @RequestMapping("/newpassword")
     @ResponseBody
-    public Map NewPassWord(@RequestParam Map map){
-        Map map1=new HashMap();
+    public Map NewPassWord(@RequestParam Map map) {
+        Map map1 = new HashMap();
         mapper.NewPassWord(map);
-        map1.put("error","success");
+        map1.put("error", "success");
         return map1;
     }
+
     @RequestMapping("/text")
     public ModelAndView gettext() {
         ModelAndView mv = new ModelAndView();
@@ -245,13 +252,14 @@ public class UserController {
         response.flushBuffer();
         workbook.write(response.getOutputStream());
     }
+
     @RequestMapping("/touxiangurl")
     @ResponseBody
-    public Map UpdateNewTX(String t_url,HttpSession session){
-        Map map1=new HashMap();
-        String t_user_account=session.getAttribute("t_user").toString();
-        mapper.userhomeimg(t_url,t_user_account);
-        map1.put("error","success");
+    public Map UpdateNewTX(String t_url, HttpSession session) {
+        Map map1 = new HashMap();
+        String t_user_account = session.getAttribute("t_user").toString();
+        mapper.userhomeimg(t_url, t_user_account);
+        map1.put("error", "success");
         return map1;
     }
 }

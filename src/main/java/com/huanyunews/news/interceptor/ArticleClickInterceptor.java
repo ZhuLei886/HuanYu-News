@@ -10,10 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by tuzhenyu on 17-7-20.
- * @author tuzhenyu
- */
+
 @Component
 public class ArticleClickInterceptor implements HandlerInterceptor {
     @Autowired
@@ -26,7 +23,7 @@ public class ArticleClickInterceptor implements HandlerInterceptor {
         //截取到正在访问的url
         String uriKey = RedisKeyUtil.getClickCountKey(uri);
         //给拦截到的连接加上增量
-        jedisService.zincrby("hotArticles",uriKey);
+        jedisService.zincrby("hotArticles", uriKey);
         return true;
     }
 
