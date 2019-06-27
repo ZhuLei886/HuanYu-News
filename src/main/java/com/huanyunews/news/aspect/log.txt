@@ -1,0 +1,119 @@
+[20:01:16:986] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:05:24:706] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:17:29:670] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:28:01:723] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:30:58:549] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:31:04:825] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[20:31:04:826] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[20:31:04:826] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/loginout
+[20:31:04:827] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/loginout
+[20:31:04:827] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[20:31:04:827] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[20:31:04:832] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:String com.lm.cms2.controller.UserController.loginout(HttpSession)
+[20:31:04:832] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:String com.lm.cms2.controller.UserController.loginout(HttpSession)
+[20:31:04:834] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[org.apache.catalina.session.StandardSessionFacade@44864ed5]
+[20:31:04:834] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[org.apache.catalina.session.StandardSessionFacade@3decde29]
+[20:31:04:834] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[20:31:04:834] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[20:31:06:540] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[20:31:06:541] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/login
+[20:31:06:541] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[20:31:06:542] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.UserController.userLogin(String,String,HttpSession)
+[20:31:06:543] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[a, a, org.apache.catalina.session.StandardSessionFacade@213ca1de]
+[20:31:06:544] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[20:38:47:702] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:43:16:857] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:47:32:807] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[20:49:40:274] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[21:06:18:182] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[21:06:36:579] [WARN] - org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration.checkTemplateLocationExists(FreeMarkerAutoConfiguration.java:70) - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[21:06:42:061] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:42:062] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/
+[21:06:42:063] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:42:067] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.HomeController.getindex()
+[21:06:42:068] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:06:42:069] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:46:557] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:46:557] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/tologin
+[21:06:46:558] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:46:558] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:String com.lm.cms2.controller.UserController.toLogin()
+[21:06:46:559] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:06:46:559] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:47:346] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:47:346] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/login
+[21:06:47:346] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[21:06:47:347] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.UserController.userLogin(String,String,HttpSession)
+[21:06:47:347] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[a, a, org.apache.catalina.session.StandardSessionFacade@7c50c11f]
+[21:06:47:347] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:48:914] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:48:914] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/
+[21:06:48:914] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:48:914] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.HomeController.getindex()
+[21:06:48:915] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:06:48:915] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:49:482] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:49:483] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/usercomcount
+[21:06:49:483] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[21:06:49:484] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:Map com.lm.cms2.controller.CommentController.UserCountComment(String)
+[21:06:49:485] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[1]
+[21:06:49:486] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:51:212] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:51:213] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/userhome
+[21:06:51:213] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:51:213] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.UserController.UserHome(HttpSession)
+[21:06:51:213] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[org.apache.catalina.session.StandardSessionFacade@7c50c11f]
+[21:06:51:213] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:54:025] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:54:026] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/nodemanagement
+[21:06:54:027] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:54:028] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.NodeController.gets()
+[21:06:54:028] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:06:54:028] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:57:185] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:57:185] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/updatenode
+[21:06:57:186] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:06:57:186] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.NodeController.updateNode(String)
+[21:06:57:187] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[11]
+[21:06:57:187] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:06:57:423] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:06:57:424] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/selectnode
+[21:06:57:425] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[21:06:57:425] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:List com.lm.cms2.controller.NodeController.getNodeSelect()
+[21:06:57:426] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:06:57:427] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:04:571] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:04:572] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/editnode
+[21:07:04:572] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:07:04:573] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.NodeController.updateNode(String,String,String,String,String)
+[21:07:04:574] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[日志查看, /adminlog, 2, 10, 11]
+[21:07:04:574] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:07:360] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:07:360] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/
+[21:07:07:361] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:07:07:361] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.HomeController.getindex()
+[21:07:07:362] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:07:07:362] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:08:100] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:08:101] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/usercomcount
+[21:07:08:102] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[21:07:08:102] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:Map com.lm.cms2.controller.CommentController.UserCountComment(String)
+[21:07:08:103] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[1]
+[21:07:08:103] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:10:593] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:10:594] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/loginout
+[21:07:10:594] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:07:10:594] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:String com.lm.cms2.controller.UserController.loginout(HttpSession)
+[21:07:10:594] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[org.apache.catalina.session.StandardSessionFacade@7c50c11f]
+[21:07:10:595] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:11:368] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:11:369] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/login
+[21:07:11:369] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:POST
+[21:07:11:370] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:ModelAndView com.lm.cms2.controller.UserController.userLogin(String,String,HttpSession)
+[21:07:11:370] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[a, a, org.apache.catalina.session.StandardSessionFacade@6f831cea]
+[21:07:11:371] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
+[21:07:13:678] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:34) - ===============请求内容===============
+[21:07:13:679] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:35) - 请求地址:http://localhost:9999/adminlog
+[21:07:13:679] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:36) - 请求方式:GET
+[21:07:13:680] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:37) - 请求类方法:String com.lm.cms2.controller.LogController.log()
+[21:07:13:680] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:38) - 请求类方法参数:[]
+[21:07:13:680] [WARN] - com.lm.cms2.aspect.LogAspect.methodBefore(LogAspect.java:39) - ===============请求内容===============
