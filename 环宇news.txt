@@ -1,0 +1,24 @@
+package  com.lm.cms2.mapper ;
+
+import  org.apache.ibatis.annotations.Mapper ;
+import  org.apache.ibatis.annotations.Select ;
+import  org.apache.ibatis.annotations.Update ;
+import  org.springframework.stereotype.Service ;
+
+import  java.util.List ;
+import  java.util.Map ;
+
+@服务
+@Mapper
+公共 接口 MbdealMapper {
+    @Select（“ select * from mb_deal ”）
+    公共 列表< 地图< 字符串，对象 > >  getUserMbDeal（）;
+
+    @Select（“ select * from mb_deal m，t_user t ”  +
+            “其中m.t_user_id = t.t_user_id ”）
+    公共 列表< 地图< 字符串，对象 > >  getMbDeal（）;
+
+    @Update（“ update mb_deal set mb_deal_money = mb_deal_money +＃{money}，”  +
+            “ mb_role =＃{mb_role}其中mb_deal_id =＃{mb_deal_id} ”）
+    公共 无效 addmoney（地图 地图）;
+}

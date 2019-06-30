@@ -1,0 +1,36 @@
+package  com.lm.cms2.mapper ;
+
+import  com.lm.cms2.model.Article ;
+import  org.apache.ibatis.annotations.Mapper ;
+import  org.apache.ibatis.annotations.Param ;
+import  org.apache.ibatis.annotations.Select ;
+import  org.springframework.stereotype.Service ;
+
+import  java.util.List ;
+import  java.util.Map ;
+
+@Mapper
+@服务
+公共 接口 HomeMapper {
+    @Select（“ select * from t_rece_node ”）
+    公共 列表< 地图< 字符串，对象 > >  getHomeNode（）;
+
+    @Select（“从t_article中选择计数（t_article_id）”）
+    public  int  getArticleCount（）;
+
+    @Select（“通过t_article_id desc limit＃{offset}，＃{limit} ”从t_article顺序中选择*）
+    公共 列表< 地图< 字符串，对象 > >  getArticle（@Param（“偏移”）的int  偏移，@Param（“限制”）INT  极限）;
+
+    @Select（“通过t_article_id desc limit＃{offset}，＃{limit} ”从t_article顺序中选择*）
+    public  List < Article >  getArticleClick（@Param（“ offset ”）int  offset，@ Param（“ limit ”）int  limit）;
+
+    @Select（“ select * from t_article where t_classification_code =＃{t_classification_code} ”）
+    公共 列表< 地图< 字符串，对象 > >  getTplb（@Param（“ t_classification_code ”）字符串 t_classification_code）;
+
+    @Select（“ select * from t_article where t_classification_code =＃{t_classification_code} ”）
+    公共 列表< 地图< 字符串，对象 > >  getTjgl（@Param（“ t_classification_code ”）字符串 t_classification_code）;
+
+    @Select（“ select * from t_article where t_article_id =＃{t_article_id} ”）
+    map  selectById（@Param（“ t_article_id ”）int  t_article_id）;
+
+}
